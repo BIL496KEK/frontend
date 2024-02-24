@@ -1,0 +1,10 @@
+<div class="col-12 md:col-6">
+    <form (ngSubmit)="onSearch()">
+        <p-inputGroup>
+            <button pButton pRipple type="submit" label="Search" class="p-button-warning" [routerLink]="['/second']"></button>
+            <input [(ngModel)]="searchKeyword" name="searchKeyword" type="text" pInputText placeholder=""/>
+        </p-inputGroup>
+    </form>
+</div>
+
+
