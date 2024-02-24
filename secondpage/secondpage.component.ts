@@ -8,5 +8,5 @@ import { Component, OnInit } from '@angular/core';
   //styleUrl: './secondpage.component.scss'
 })
 export class SecondpageComponent{
-  yorum: string = "cok iyi urun kesin alin wow!"
+  yorum: string = "<yorumyorumyorum>"
 }
