@@ -1,0 +1,109 @@
+ 
+    
+    <!-- <div class="flex justify-content-center align-items-center" style="height: 100%;">
+        <img src="../../assets/demo/images/logo.png" class="mb-5 w-6rem flex-shrink-0">
+    </div> -->
+    <div class="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
+        
+        
+        <!-- <div class="flex flex-column align-items-center justify-content-center"> -->
+            <div class="col-12 md:col-6">
+                <!-- <div style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%);"> -->
+                <div style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, #FFA726 10%, rgba(255, 167, 38, 0) 30%);">
+                    <div class="w-full surface-card py-8 px-5 sm:px-8" style="border-radius:53px">
+                        
+                        <div>
+                            <div class="text-center mb-5">
+                    
+                                <div class="text-900 text-3xl font-medium mb-3">Personal Informations</div>
+                                
+                            </div>
+                            <form (ngSubmit)="onUpdateProfile()">
+                                <div class = "p-formgrid grid">
+                                    <div class="field col">
+                                        <label for="name" class="block text-900 text-xl font-medium mb-2">First Name</label>
+                                        <input type="text" id="name" placeholder="Sezin"  style="padding:1rem; width: 80%;" [(ngModel)]="profileForm.name" name="name" required pInputText>
+                                    </div>
+                                    <div class="field col">
+                                        <label for="surname" class="block text-900 text-xl font-medium mb-2">Last Name</label>
+                                        <input type="text" id="surname" placeholder="Laleli"  style="padding:1rem; width: 80%;" [(ngModel)]="profileForm.surname" name="surname" required pInputText>
+                                    </div>
+                                </div>
+                                <div class = "p-formgrid grid">
+                                    <div class="field col">
+                                        <label for="email" class="block text-900 text-xl font-medium mb-2">E-Mail</label>
+                                        <input type="email" id="email" placeholder="sezin.laleli@gmail.com" style="padding:1rem; width: 80%;" [(ngModel)]="profileForm.email" name="email" required pInputText>
+                                    </div>
+                                    <div class="field col">
+                                        <label for="phone" class="block text-900 text-xl font-medium mb-2">Phone Number</label>
+                                        <input type="tel" id="phone" placeholder="+90 53******00" style="padding:1rem; width: 80%;" [(ngModel)]="profileForm.phone" name="phone" required pInputText>
+                                    </div>
+                                </div>
+                                <!-- <button type="submit" pButton label="Submit" class="mt-2"></button> -->
+                                <div class="flex justify-content-center">
+                                    <!-- <button pButton pRipple label="Register" type="submit" class="w-full p-3 text-xl" ></button> -->
+                                    <button pButton pRipple label="Submit" type="submit" class="p-2 text-lg" style="background: #FFA726; border: none; color: white; width: 50%;"></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="flex flex-column align-items-center justify-content-center"> -->
+            <div class="col-12 md:col-6">
+                <!-- <div style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%);"> -->
+                <div style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, #FFA726 10%, rgba(255, 167, 38, 0) 30%);">
+                    <div class="w-full surface-card py-8 px-5 sm:px-8" style="border-radius:53px">
+                        
+                        <div>
+                            <div class="text-center mb-5">
+                    
+                                <div class="text-900 text-3xl font-medium mb-3">Password Update</div>
+                                
+                            </div>
+                            <form (ngSubmit)="onChangePassword()">
+                                <div class="field">
+                                    <label for="currentPassword" class="block text-900 text-xl font-medium mb-2">Current Password</label>
+                                    <input type="password" id="currentPassword" pInputText class="w-full md:w-30rem mb-5"   [(ngModel)]="passwordForm.currentPassword" name="currentPassword" required pInputText>
+                                </div>
+                                <div class = "p-formgrid grid">
+                                    <div class="field col">
+                                        <label for="newPassword" class="block text-900 text-xl font-medium mb-2">New Password</label>
+                                        <input type="password" id="newPassword" style=" width: 80%;" [(ngModel)]="passwordForm.newPassword" name="newPassword" required pInputText>
+                                    </div>
+                                    <div class="field col">
+                                        <label for="confirmNewPassword" class="block text-900 text-xl font-medium mb-2">Confirm New Password</label>
+                                        <input type="password" id="confirmNewPassword" style=" width: 80%;" [(ngModel)]="passwordForm.confirmNewPassword" name="confirmNewPassword" required pInputText>
+                                    </div>
+                                </div>
+                                <!-- <button type="submit" pButton label="Submit" class="mt-2"></button> -->
+                                <div class="flex justify-content-center">
+                                    <!-- <button pButton pRipple label="Register" type="submit" class="w-full p-3 text-xl" ></button> -->
+                                    <button pButton pRipple label="Submit" type="submit" class="p-2 text-lg" style="background: #FFA726; border: none; color: white; width: 50%;"></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <h5>Şifre Güncelleme</h5>
+                    <form (ngSubmit)="onChangePassword()">
+                        <div class="field">
+                            <label for="currentPassword">Şu Anki Şifre</label>
+                            <input type="password" id="currentPassword" [(ngModel)]="passwordForm.currentPassword" name="currentPassword" required pInputText>
+                        </div>
+                        <div class="field">
+                            <label for="newPassword">Yeni Şifre</label>
+                            <input type="password" id="newPassword" [(ngModel)]="passwordForm.newPassword" name="newPassword" required pInputText>
+                        </div>
+                        <div class="field">
+                            <label for="confirmNewPassword">Yeni Şifre (Tekrar)</label>
+                            <input type="password" id="confirmNewPassword" [(ngModel)]="passwordForm.confirmNewPassword" name="confirmNewPassword" required pInputText>
+                        </div>
+                        <button type="submit" pButton label="Güncelle" class="mt-2"></button>
+                    </form>
+                </div> -->
+            </div>
+        <!-- </div> -->
+    </div>
