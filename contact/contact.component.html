@@ -1,0 +1,27 @@
+<div class="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
+    <div class="flex flex-column align-items-center justify-content-center">
+        <img src="../../assets/demo/images/logo.png" class="mb-5 w-6rem flex-shrink-0">                
+        <div style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%);">
+            <div class="w-full surface-card py-8 px-5 sm:px-8" style="border-radius:53px">
+                <div class="text-center mb-5">
+                    <!-- <img src="assets/demo/images/login/avatar.png" alt="Image" height="50" class="mb-3"> -->
+                    <div class="text-900 text-3xl font-medium mb-3">Contact Us!</div>
+                    <!-- <span class="text-600 font-medium">Sign in to continue</span> -->
+                </div>
+
+                <div>
+                    <label for="email1" class="block text-900 text-xl font-medium mb-2">Email</label>
+                    <input id="email1" type="text" placeholder="Email address" pInputText class="w-full md:w-30rem mb-5" style="padding:1rem">
+
+                    <h5>Please Write Your Message</h5>
+			        <textarea rows="5" cols="30" placeholder="Your Message" pInputText class="w-full md:w-30rem mb-5" pInputTextarea></textarea>
+
+                    <div class="grid flex flex-column align-items-center">
+                        <button pButton pRipple label="Send" class="w-full p-3 text-xl" [routerLink]="['/']"></button>
+                        <button pButton pRipple icon="pi pi-arrow-left" label="Go to Dashboard" class="p-button-text" [routerLink]="['/']"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
